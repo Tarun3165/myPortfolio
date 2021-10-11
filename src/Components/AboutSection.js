@@ -1,18 +1,15 @@
 import React from 'react'
 import styled from 'styled-components';
-import avatar from '../img/avatar.jpg';
 import PrimaryButton from './PrimaryButton';
 
-function ImageSection() {
+function AboutSection() {
     return (
-        <ImageSectionStyled>
-            <div className="left-content">
-                <img src={avatar} alt=""/>
-            </div>
+        <AboutSectionStyled>
+            
             <div className="right-content">
                 <h4>I am <span>Tarun Singh Rawat</span></h4>
                 <p className="paragraph">
-                An aspiring full stack developer anda determined problem solver with200+ hours of coding experience withspecialization in MERN Stack.Passion for building scalable webapplications and interested in beinga part of a product based company
+                An aspiring full stack developer and a determined problem solver with 200+ hours of coding experience with specialization in MERN Stack. Passion for building scalable webapplications and interested in being a part of a product based company
                     
                 </p>
                 <div className="about-info">
@@ -31,14 +28,14 @@ function ImageSection() {
                         <p>: Dehradun, Uttrakhand</p>
                     </div>
                 </div>
-                <PrimaryButton title={'Download Cv'} />
+                <PrimaryButton  href={"https://drive.google.com/file/d/1vCBne3mx4Dzt657j7gP6nO1f1ohzvG8r/view?usp=sharing"} title={'View Resume'} />
             </div>
-        </ImageSectionStyled>
+        </AboutSectionStyled>
     )
 }
 
 
-const ImageSectionStyled = styled.div`
+const AboutSectionStyled = styled.div`
     margin-top: 5rem;
     display: flex;
     @media screen and (max-width:1000px){
@@ -83,4 +80,4 @@ const ImageSectionStyled = styled.div`
         }
     }
 `;
-export default ImageSection;
+export default AboutSection;

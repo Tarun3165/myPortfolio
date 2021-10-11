@@ -7,44 +7,43 @@ import ProgressBar from './ProgressBar';
 function Skills() {
     return (
         <SkillsStyled>
-            
                 <Title title={'My Skills'} span={'my skills'} />
                 <InnerLayout>
                     <div className="skills">
                         <ProgressBar 
                             title={'HTML5'}
                             width={'80%'}
-                            text={'80%'}
+                            // text={'80%'}
                         />
                         <ProgressBar 
                             title={'CSS3'}
                             width={'90%'}
-                            text={'90%'}
+                            // text={'90%'}
                         />
                         <ProgressBar 
                             title={'JAVASCRIPT'}
                             width={'85%'}
-                            text={'85%'}
+                            // text={'85%'}
                         />
                             <ProgressBar 
                                 title={'React JS'}
                                 width={'80%'}
-                                text={'80%'}
+                                // text={'80%'}
                             />
                         <ProgressBar 
                             title={'Express'}
                             width={'75%'}
-                            text={'75%'}
+                            // text={'75%'}
                         />
                         <ProgressBar 
                             title={'MongoDb'}
                             width={'75%'}
-                            text={'75%'}
+                            // text={'75%'}
                         />
                         <ProgressBar 
                             title={'Bootstrap'}
                             width={'80%'}
-                            text={'80%'}
+                            // text={'80%'}
                         />
                        
                        
