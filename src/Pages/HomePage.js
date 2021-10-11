@@ -3,14 +3,13 @@ import styled from 'styled-components';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GithubIcon from '@material-ui/icons/GitHub';
 import Particle from '../Components/Particle';
-
 function HomePage() {
     return (
         <HomePageStyled>
             <div className="particle-con">
                 <Particle />
             </div>
-            <div className="typography">
+            <div className="content">
        
                 <h1>Hi, I'm <span >Tarun Singh Rawat</span></h1>
                 <p >
@@ -23,6 +22,7 @@ function HomePage() {
                     <a target="_blanck" href="https://github.com/Tarun3165?tab=repositories" className="icon i-github">
                         <GithubIcon />
                     </a>
+                       
                    
                 </div>
             </div>
@@ -30,17 +30,15 @@ function HomePage() {
     )
 }
 
-const HomePageStyled = styled.header`
+const HomePageStyled = styled.div`
     width: 100%;
     height: 100vh;
-    position: relative;
     
     
-    .typography{
+    .content{
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        top: 40%;
+        left: 10%;
         text-align: center;
         width: 80%;
         .icons{
@@ -53,18 +51,15 @@ const HomePageStyled = styled.header`
                 align-items: center;
                 justify-content: center;
                 border-radius: 50%;
-                transition: all .4s ease-in-out;
+                padding: 1.4%;
+                margin: 15px;
                 cursor: pointer;
                 &:hover{
                     border: 2px solid var(--primary-color);
                     color: var(--primary-color);
                 }
-                &:not(:last-child){
-                    margin-right: 1rem;
-                }
-                svg{
-                    margin: .5rem;
-                }
+                
+              
             }
             
             
