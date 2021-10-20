@@ -1,20 +1,29 @@
 {
   "files": {
-    "main.js": "/myPortfolio/static/js/main.2108980c.chunk.js",
-    "main.js.map": "/myPortfolio/static/js/main.2108980c.chunk.js.map",
+    "main.js": "/myPortfolio/static/js/main.10e70664.chunk.js",
+    "main.js.map": "/myPortfolio/static/js/main.10e70664.chunk.js.map",
     "runtime-main.js": "/myPortfolio/static/js/runtime-main.64cc9542.js",
     "runtime-main.js.map": "/myPortfolio/static/js/runtime-main.64cc9542.js.map",
-    "static/js/2.3f3e5973.chunk.js": "/myPortfolio/static/js/2.3f3e5973.chunk.js",
-    "static/js/2.3f3e5973.chunk.js.map": "/myPortfolio/static/js/2.3f3e5973.chunk.js.map",
+    "static/js/2.6d376f59.chunk.js": "/myPortfolio/static/js/2.6d376f59.chunk.js",
+    "static/js/2.6d376f59.chunk.js.map": "/myPortfolio/static/js/2.6d376f59.chunk.js.map",
     "index.html": "/myPortfolio/index.html",
-    "static/js/2.3f3e5973.chunk.js.LICENSE.txt": "/myPortfolio/static/js/2.3f3e5973.chunk.js.LICENSE.txt",
-    "static/media/avatar.4c4aaa41.jpg": "/myPortfolio/static/media/avatar.4c4aaa41.jpg",
+    "static/js/2.6d376f59.chunk.js.LICENSE.txt": "/myPortfolio/static/js/2.6d376f59.chunk.js.LICENSE.txt",
+    "static/media/avatar.dc2fdbc9.png": "/myPortfolio/static/media/avatar.dc2fdbc9.png",
+    "static/media/bootstrap.f2ea2bef.png": "/myPortfolio/static/media/bootstrap.f2ea2bef.png",
+    "static/media/css.7fd5c1c0.png": "/myPortfolio/static/media/css.7fd5c1c0.png",
+    "static/media/express.d92d9ac3.png": "/myPortfolio/static/media/express.d92d9ac3.png",
+    "static/media/javascript.08767f9c.png": "/myPortfolio/static/media/javascript.08767f9c.png",
+    "static/media/material.aa02f195.png": "/myPortfolio/static/media/material.aa02f195.png",
+    "static/media/mongodb.ae5ad5cd.png": "/myPortfolio/static/media/mongodb.ae5ad5cd.png",
+    "static/media/node.1308fa45.png": "/myPortfolio/static/media/node.1308fa45.png",
     "static/media/pepperfry.5e6dbce5.png": "/myPortfolio/static/media/pepperfry.5e6dbce5.png",
-    "static/media/primevideo.ac285f93.png": "/myPortfolio/static/media/primevideo.ac285f93.png"
+    "static/media/primevideo.ac285f93.png": "/myPortfolio/static/media/primevideo.ac285f93.png",
+    "static/media/react.ba3fb7e6.png": "/myPortfolio/static/media/react.ba3fb7e6.png",
+    "static/media/redux.f320f711.png": "/myPortfolio/static/media/redux.f320f711.png"
   },
   "entrypoints": [
     "static/js/runtime-main.64cc9542.js",
-    "static/js/2.3f3e5973.chunk.js",
-    "static/js/main.2108980c.chunk.js"
+    "static/js/2.6d376f59.chunk.js",
+    "static/js/main.10e70664.chunk.js"
   ]
 }
