@@ -2,7 +2,17 @@ import React from 'react'
 import styled from 'styled-components';
 import {InnerLayout} from '../styles/Layouts';
 import Title from '../Components/Title';
-import ProgressBar from './ProgressBar';
+import TechCard from './TechCard';
+import html from "../img/html.png"
+import css from "../img/css.png"
+import javascript from "../img/javascript.png"
+import react from "../img/react.png"
+import redux from "../img/redux.png"
+import mongodb from "../img/mongodb.png"
+import node from "../img/node.png"
+import bootstrap from "../img/bootstrap.png"
+import material from "../img/material.png"
+import express from "../img/express.png"
 
 function Skills() {
     return (
@@ -10,43 +20,65 @@ function Skills() {
                 <Title title={'My Skills'} span={'my skills'} />
                 <InnerLayout>
                     <div className="skills">
-                        <ProgressBar 
+                       
+                    
+                        <TechCard 
+                            imgUrl={html}
                             title={'HTML5'}
-                            width={'80%'}
-                            // text={'80%'}
+                           
                         />
-                        <ProgressBar 
-                            title={'CSS3'}
-                            width={'90%'}
-                            // text={'90%'}
+                        <TechCard 
+                        imgUrl={css}
+                        title={'CSS3'}
+                            
                         />
-                        <ProgressBar 
-                            title={'JAVASCRIPT'}
-                            width={'85%'}
-                            // text={'85%'}
-                        />
-                            <ProgressBar 
-                                title={'React JS'}
-                                width={'80%'}
-                                // text={'80%'}
+                        <TechCard
+                        imgUrl={javascript} 
+                        title={'JAVASCRIPT'}
+                    />
+                    
+                        <TechCard
+                        imgUrl={react} 
+                        title={'React JS'}
+                                
+                               
                             />
-                        <ProgressBar 
-                            title={'Express'}
-                            width={'75%'}
-                            // text={'75%'}
+                        <TechCard
+                        imgUrl={redux} 
+                        title={'Redux'}
+                                
+                               
+                            />
+                        <TechCard
+                        imgUrl={node} 
+                        title={'Node Js'}
+                            
+                            
                         />
-                        <ProgressBar 
-                            title={'MongoDb'}
-                            width={'75%'}
-                            // text={'75%'}
+                        <TechCard
+                        imgUrl={express} 
+                        title={'Express'}
+                            
+                           
                         />
-                        <ProgressBar 
-                            title={'Bootstrap'}
-                            width={'80%'}
-                            // text={'80%'}
+                        <TechCard
+                        imgUrl={mongodb} 
+                        title={'MongoDb'}
+                            
+                            
                         />
-                       
-                       
+                        <TechCard
+                        imgUrl={bootstrap} 
+                        title={'Bootstrap'}
+                            
+                            
+                        />
+                        <TechCard
+                        imgUrl={material} 
+                        title={'Material Ui'}
+                            
+                            
+                        />
                        
                     </div>
                 </InnerLayout>
@@ -57,10 +89,13 @@ function Skills() {
 const SkillsStyled = styled.section`
     .skills{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-row-gap: 2rem;
         grid-column-gap: 3rem;
-        @media screen and (max-width: 700px){
+        @media screen and (max-width: 750px){
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media screen and (max-width: 650px){
             grid-template-columns: repeat(1, 1fr);
         }
     }

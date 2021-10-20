@@ -16,10 +16,10 @@ function HomePage() {
                 I'm a full-stack web developer.
                 </p>
                 <div className="icons">
-                    <a target="_blanck" href="https://www.linkedin.com/in/tarun-rawat-3832a7162/" className="icon i-linkedin">
+                    <a target="_blanck" href="https://www.linkedin.com/in/tarun-rawat-3832a7162/" className="icon ">
                         <LinkedInIcon />
                     </a>
-                    <a target="_blanck" href="https://github.com/Tarun3165?tab=repositories" className="icon i-github">
+                    <a target="_blanck" href="https://github.com/Tarun3165?tab=repositories" className="icon ">
                         <GithubIcon />
                     </a>
                        
@@ -59,16 +59,8 @@ const HomePageStyled = styled.div`
                     color: var(--primary-color);
                 }
                 
-              
             }
             
-            
-            .i-github{
-                &:hover{
-                    border: 2px solid #5F4687;
-                    color: #5F4687;
-                }
-            }
         }
     }
 `;
