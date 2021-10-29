@@ -2,6 +2,7 @@ import {createGlobalStyle} from 'styled-components';
 
 
 const GlobalStyle = createGlobalStyle`
+
  :root{
     --primary-color: #007bff;
     --primary-color-light: #057FFF;
@@ -164,7 +165,9 @@ h6{
         transform: translateX(0);
         z-index: 20;
     }
+    
   @media screen and (max-width:1200px){
+
     .ham-burger-menu{
         display: block;
     }

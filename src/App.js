@@ -1,5 +1,5 @@
 
-import { useState } from "react";
+import {  useState } from "react";
 import Sidebar from "./Components/Sidebar";
 import styled from 'styled-components';
 import HomePage from "./Pages/HomePage";
@@ -13,13 +13,15 @@ import ProjectPage from "./Pages/ProjectPage";
 
 
 function App() {
-  const [navToggle, setNavToggle] = useState(false);
+  
+  const [NavToggle, setNavToggle] = useState(false);
+ 
 
   return (
     <div className="App">
-        <Sidebar navToggle={navToggle} />
+        <Sidebar NavToggle={NavToggle} />
         <div className="ham-burger-menu">
-          <IconButton onClick={() => setNavToggle(!navToggle)}>
+          <IconButton onClick={()=>setNavToggle(!NavToggle)}>
               <MenuIcon />
           </IconButton>
         </div>
@@ -30,7 +32,7 @@ function App() {
               <HomePage />
             </Route>
             <Route path="/home" exact>
-              <HomePage />
+            <HomePage />
             </Route>
             <Route path="/about" exact>
               <AboutPage />

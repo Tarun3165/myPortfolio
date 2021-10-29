@@ -92,11 +92,18 @@ const SkillsStyled = styled.section`
         grid-template-columns: repeat(4, 1fr);
         grid-row-gap: 2rem;
         grid-column-gap: 3rem;
+       
+        @media screen and (max-width: 800px){
+            grid-template-columns: repeat(3, 1fr);
+        }
         @media screen and (max-width: 750px){
             grid-template-columns: repeat(2, 1fr);
         }
+        @media screen and (max-width: 700px){
+            grid-template-columns: repeat(2, 1fr);
+        }
         @media screen and (max-width: 650px){
-            grid-template-columns: repeat(1, 1fr);
+            grid-template-columns: repeat(2,1fr);
         }
     }
 `;

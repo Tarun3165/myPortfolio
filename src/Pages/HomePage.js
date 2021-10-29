@@ -3,8 +3,11 @@ import styled from 'styled-components';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GithubIcon from '@material-ui/icons/GitHub';
 import Particle from '../Components/Particle';
+
 function HomePage() {
     return (
+        
+
         <HomePageStyled>
             <div className="particle-con">
                 <Particle />
@@ -27,13 +30,16 @@ function HomePage() {
                 </div>
             </div>
         </HomePageStyled>
+      
+
     )
 }
 
 const HomePageStyled = styled.div`
     width: 100%;
     height: 100vh;
-    
+
+   
     
     .content{
         position: absolute;
