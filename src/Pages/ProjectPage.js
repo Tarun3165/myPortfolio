@@ -35,7 +35,7 @@ function ProjectPage() {
                         teckStack={'Tech Stack: React , CSS, JAVASCRIPT , Express ,MongoDb Atlas  .'}
                         sourceCode={"https://github.com/hmntk/primevideoclone.git"}
                         liveDemo={" https://primevideoclone.vercel.app/"}
-                        videoDemo={""}
+                        videoDemo={"https://drive.google.com/file/d/1vZU0A8Z_3oEKuwKhFjyJ5kgsU9m8vDgg/view?usp=sharing"}
                     />
                    
                 </div>

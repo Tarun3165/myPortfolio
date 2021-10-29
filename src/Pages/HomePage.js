@@ -19,7 +19,7 @@ function HomePage() {
                     <a target="_blanck" href="https://www.linkedin.com/in/tarun-rawat-3832a7162/" className="icon ">
                         <LinkedInIcon />
                     </a>
-                    <a target="_blanck" href="https://github.com/Tarun3165?tab=repositories" className="icon ">
+                    <a target="_blanck" href="https://github.com/Tarun3165" className="icon ">
                         <GithubIcon />
                     </a>
                        
