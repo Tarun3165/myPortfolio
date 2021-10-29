@@ -29,10 +29,11 @@ box-shadow: inset 0 0 10px #000000;
         width: 100%;
         .imgDiv{
             width: 100%;
+            height:25VH;
             .image{
                
               width: 100%;
-              height: 35vh;
+              height: 24vh;
           }
         }
     }

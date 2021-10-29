@@ -21,17 +21,17 @@ function ProjectPage() {
                     <ProjectCard1 
                         image={pepperfry} 
                         title={'Clone of pepperfry.com'} 
-                        paragraph={'Pepperfry is an E-commerce Website that deals in home decor and all furniture products procured from all across India.'}
+                        paragraph={'Cloned Pepperfry.com is an E-commerce Website using CRUD applications that deals in home decor and all furniture productswhere you can sort as per your preferences, add them to the cart to purchase.'}
                        
                       sourceCode={"https://github.com/Tarun3165/pepperfryBackend.git"}
-                      liveDemo={""}
+                      liveDemo={"https://pepperfrywebsite.herokuapp.com/products/home"}
                       videoDemo={"https://drive.google.com/file/d/1VdQOaIKyOOtCNWsU74sV608loTviUi4n/view?usp=sharing"}
                     />
                   
                     <ProjectCard2 
                         image={primevideo} 
                         title={'Clone of primevideo.com'} 
-                        paragraph={'Prime Video is a streaming video service by Amazon, where we can watch hundreds ofTV shows and movies on our favorite devices.'}
+                        paragraph={'Clone Prime Video which is one of the most popular streaming video service , with interesting funtionalities like searching movies and TV series and play them once loggedIn and  you can add them to your watchlist to watch later.'}
                         teckStack={'Tech Stack: React , CSS, JAVASCRIPT , Express ,MongoDb Atlas  .'}
                         sourceCode={"https://github.com/hmntk/primevideoclone.git"}
                         liveDemo={" https://primevideoclone.vercel.app/"}
