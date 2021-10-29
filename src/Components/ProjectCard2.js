@@ -1,14 +1,14 @@
 import React from 'react'
 import styled from 'styled-components';
-import html from "../img/html.png"
-import css from "../img/css.png"
 import javascript from "../img/javascript.png"
 import express from "../img/express.png"
 import mongodb from "../img/mongodb.png"
-import node from "../img/node.png"
-import material from "../img/material.png"
 import react from "../img/react.png"
-import redux from "../img/redux.png"
+// import html from "../img/html.png"
+// import css from "../img/css.png"
+// import node from "../img/node.png"
+// import redux from "../img/redux.png"
+// import material from "../img/material.png"
 
 function ProjectCard2({image, title, paragraph,sourceCode,liveDemo,videoDemo}) {
     return (
@@ -95,7 +95,7 @@ const ProjectCard2Styled = styled.div`
 
         a{
             flex-basis: 32%;
-            padding: 3%;
+            padding: 5%;
             background-color: var(--primary-color);
             color:white;
             text-align: center;

@@ -6,9 +6,9 @@ import javascript from "../img/javascript.png"
 import express from "../img/express.png"
 import mongodb from "../img/mongodb.png"
 import node from "../img/node.png"
-import material from "../img/material.png"
-import react from "../img/react.png"
-import redux from "../img/redux.png"
+// import material from "../img/material.png"
+// import react from "../img/react.png"
+// import redux from "../img/redux.png"
 
 function ProjectCard1({image, title, paragraph,sourceCode,liveDemo,videoDemo}) {
     return (
@@ -96,8 +96,9 @@ const ProjectCard1Styled = styled.div`
         }
 
         a{
+            
             flex-basis: 32%;
-            padding: 3%;
+            padding: 5%;
             background-color: var(--primary-color);
             color:white;
             text-align: center;
