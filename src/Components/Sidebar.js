@@ -9,7 +9,7 @@ function Sidebar({NavToggle,handleToggle}) {
    
     
     return (
-        <SidebarStyled className={ `${ NavToggle? '' :"nav-toggle"}`}>
+        <SidebarStyled className={ `${ NavToggle? 'nav-toggle' :""}`}>
             <Navigation handleToggle={ handleToggle}/>
         </SidebarStyled>
     )
