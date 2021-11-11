@@ -2,10 +2,15 @@ import React from 'react'
 import styled from 'styled-components';
 import Navigation from './Navigation';
 
-function Sidebar({NavToggle}) {
+
+
+function Sidebar({NavToggle,handleToggle}) {
+
+   
+    
     return (
-        <SidebarStyled className={`${NavToggle ? 'nav-toggle' :""}`}>
-            <Navigation />
+        <SidebarStyled className={ `${ NavToggle? '' :"nav-toggle"}`}>
+            <Navigation handleToggle={ handleToggle}/>
         </SidebarStyled>
     )
 }

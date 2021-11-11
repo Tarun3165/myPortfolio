@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import {NavLink} from 'react-router-dom';
 import avatar from '../img/avatar.png';
 
-function  Navigation(  ) {
+function  Navigation({handleToggle} ) {
     return (
         <NavigationStyled>
             <div className="avatar">
@@ -11,20 +11,20 @@ function  Navigation(  ) {
             </div>
             <ul className="nav-items">
                 <li className="nav-item">
-                    <NavLink to="/home" activeClassName="active-class" exact>Home</NavLink>
+                    <NavLink onClick={()=>handleToggle()} to="/home" activeClassName="active-class" exact>Home</NavLink>
                 </li>
                 <li className="nav-item">
-                    <NavLink to="/about" activeClassName="active-class" exact>About</NavLink>
+                    <NavLink onClick={()=>handleToggle()} to="/about" activeClassName="active-class" exact>About</NavLink>
                 </li>
                 <li className="nav-item">
-                    <NavLink to="/skills" activeClassName="active-class" exact>Skills</NavLink>
+                    <NavLink onClick={()=>handleToggle()} to="/skills" activeClassName="active-class" exact>Skills</NavLink>
                 </li>
                 <li className="nav-item">
-                    <NavLink to="/projects" activeClassName="active-class" exact>Projects</NavLink>
+                    <NavLink onClick={()=>handleToggle()} to="/projects" activeClassName="active-class" exact>Projects</NavLink>
                 </li>
                 
                 <li className="nav-item">
-                    <NavLink to="/contact" activeClassName="active-class" exact>Contact</NavLink>
+                    <NavLink onClick={()=>handleToggle()} to="/contact" activeClassName="active-class" exact>Contact</NavLink>
                 </li>
             </ul>
             <footer className="footer">

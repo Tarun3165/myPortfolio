@@ -15,11 +15,14 @@ import ProjectPage from "./Pages/ProjectPage";
 function App() {
   
   const [NavToggle, setNavToggle] = useState(false);
- 
-
+     
+  function handleToggle() {
+    setNavToggle(!NavToggle)
+  }
+   
   return (
     <div className="App">
-        <Sidebar NavToggle={NavToggle} />
+        <Sidebar handleToggle={handleToggle} NavToggle={NavToggle} />
         <div className="ham-burger-menu">
           <IconButton onClick={()=>setNavToggle(!NavToggle)}>
               <MenuIcon />
