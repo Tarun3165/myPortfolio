@@ -17,12 +17,13 @@ function TechCard({title, width, imgUrl}) {
 const TechCardStyled = styled.div`
 border: 1px solid var(--border-color);
 padding: 4%;
+height:33vh;
 text-align: center;
 box-shadow: inset 0 0 10px #000000;
 &:hover{
-    /* border: 1px solid white; */
-    -webkit-box-shadow: 3px 3px 5px 6px black;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-  -moz-box-shadow:    3px 3px 5px 6px black;  /* Firefox 3.5 - 3.6 */
+  
+    -webkit-box-shadow: 3px 3px 5px 6px black; 
+  -moz-box-shadow:    3px 3px 5px 6px black;  
   box-shadow:         3px 3px 5px 6px black; 
   }
     .card{
@@ -30,6 +31,7 @@ box-shadow: inset 0 0 10px #000000;
         .imgDiv{
             width: 100%;
             height:25VH;
+            /* border: 1px solid red; */
             .image{
                
               width: 100%;

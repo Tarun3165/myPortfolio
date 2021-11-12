@@ -45,13 +45,15 @@ const NavigationStyled = styled.nav`
     
     .avatar{
     width: 100%;
+    flex-basis: 30%;
     border-bottom:1px solid var(--border-color);
     text-align: center;
     padding: 1rem 0;
-
+    /* border: 1px solid red; */
     img{
-        width: 40VH;
-        height: 40VH;
+
+        width: 85%;
+        height: 92%;
         border-radius: 50%;
         border:8px solid var(--border-color);
 
@@ -59,8 +61,13 @@ const NavigationStyled = styled.nav`
 }
 
     .nav-items{
+    flex-basis: 50%;
+    /* border: 1px solid red; */
+    margin-top: 5%;
+    margin-bottom: 5%;
         width: 100%;
         text-align: center;
+       
         .active-class{
             background-color: var(--primary-color-light);
             color: white;
@@ -104,6 +111,7 @@ const NavigationStyled = styled.nav`
     footer{
         border-top: 1px solid var(--border-color);
         width: 100%;
+        flex-basis: 30%;
         p{
             padding: 1.3rem 0;
             font-size: 1.1rem;

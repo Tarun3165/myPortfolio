@@ -46,6 +46,8 @@ function ProjectPage() {
 }
 
 const ProjectPageStyled = styled.section`
+/* border: 1px solid red; */
+margin-top: -4rem;
     .projects{
         margin-top: 5rem;
         display: grid;
