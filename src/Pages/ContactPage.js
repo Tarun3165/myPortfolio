@@ -2,16 +2,30 @@ import React from 'react';
 import styled from 'styled-components';
 import {MainLayout, InnerLayout} from '../styles/Layouts';
 import Title from '../Components/Title';
-import PrimaryButton from '../Components/PrimaryButton';
+// import PrimaryButton from '../Components/PrimaryButton';
 import PhoneIcon from '@material-ui/icons/Phone';
 import EmailIcon from '@material-ui/icons/Email';
-// import LocationOnIcon from '@material-ui/icons/LocationOn';
+import LocationOnIcon from '@material-ui/icons/LocationOn';
 import ContactItem from '../Components/ContactItem';
+import emailjs from 'emailjs-com';
 
 function ContactPage() {
     const phone = <PhoneIcon />
     const email = <EmailIcon />
-    // const location = <LocationOnIcon />
+    const location = <LocationOnIcon />
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+        console.log(e);
+        emailjs.sendForm('service_xfhosci', 'template_klou6u8', e.target, 'user_EtsMFFBghCEapGZsdO1fQ')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+        e.target.reset();
+    };
+    
     return (
         <MainLayout>
             <Title title={'Contact'} span={'Contact'} />
@@ -21,33 +35,32 @@ function ContactPage() {
                     <div className="contact-title">
                         <h4>Get In Touch</h4>
                     </div>
-                    <form  className="form">
-                        <div className="form-field">
-                            <label htmlFor="name"  >Enter your name*</label>
-                            <input type="text" id="name" />
-                        </div>
-                        <div className="form-field">
-                            <label htmlFor="email"  >Enter your email*</label>
-                            <input type="email" id="email" />
-                        </div>
-                        <div className="form-field">
-                            <label htmlFor="subject"  >Enter your subject</label>
-                            <input type="text" id="subject" />
-                        </div>
-                        <div className="form-field">
-                            <label htmlFor="text-area">Enter your Message*</label>
-                            <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
-                        </div>
-                        <div className="form-field f-button">
-                            <PrimaryButton title={'Send Email'} />
-                        </div>
+                    <form onSubmit={ sendEmail} className="form">
+                    <div className="form-field">
+                        <label htmlFor="name"  >Enter your name*</label>
+                        <input type="text" id="name" name="name" required/>
+                    </div>
+                    <div className="form-field">
+                        <label htmlFor="email"  >Enter your email*</label>
+                        <input type="email" id="email" name="email" required/>
+                    </div>
+                    <div className="form-field">
+                        <label htmlFor="subject"  >Enter your subject</label>
+                        <input type="text" id="subject" name="subject" />
+                    </div>
+                    <div className="form-field">
+                        <label htmlFor="text-area">Enter your Message*</label>
+                        <textarea  id="textarea" name="message" cols="30" rows="10" required></textarea>
+                    </div>
+                    <div className="form-field f-button">
+                        <input className="submit" type="submit" value="Send Email" />
+                    </div>
                     </form>
                 </div>
                 <div className="right-content">
                     <ContactItem title={'Phone'} icon={phone} cont1={'8475993165'}  />
                     <ContactItem title={'Email'} icon={email} cont1={'rawattarun3165@gmail.com'}  />
-                    {/* <ContactItem title={'Address'} icon={location} cont1={'27 Aldrich Road, London, England'} cont2={'United Kingdom'} /> */}
-                    
+                    <ContactItem title={'Address'} icon={location} cont1={'12-A Mini Mig Mdda Colony Dalanwala, Dehradun, Uttrakhand, India'} />
                 </div>
             </InnerLayout>
             </ContactPageStyled>
@@ -89,6 +102,12 @@ const ContactPageStyled = styled.section`
                 margin-top: 2rem;
                 position: relative;
                 width: 100%;
+
+                .submit{
+                    background-color: rgb(5,127,255);
+                    color:white;
+                    font-weight: 900;
+                }
                 label{
                     position: absolute;
                     left: 20px;
