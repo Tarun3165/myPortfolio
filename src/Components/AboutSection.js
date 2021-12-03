@@ -14,7 +14,7 @@ function AboutSection() {
                 
                     
                 
-                <PrimaryButton  href={"https://drive.google.com/file/d/1vCBne3mx4Dzt657j7gP6nO1f1ohzvG8r/view?usp=sharing"} title={'View Resume'} />
+                <PrimaryButton  href={"https://drive.google.com/drive/folders/1sOdFtVRpKFthXq62KF8aBqoGvB2nLdyg?usp=sharing"} title={'View Resume'} />
             </div>
         </AboutSectionStyled>
     )
