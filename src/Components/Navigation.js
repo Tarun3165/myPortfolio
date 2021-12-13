@@ -72,13 +72,14 @@ const NavigationStyled = styled.nav`
             background-color: var(--primary-color-light);
             color: white;
         }
+        
         li{
             display: block;
             a{
                 display: block;
                 padding: .45rem 0;
                 position: relative;
-                /* z-index: 10; */
+                z-index: 10;
                 text-transform: uppercase;
                 transition: all .4s ease-in-out;
                 font-weight: 600;

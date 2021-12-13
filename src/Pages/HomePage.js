@@ -19,7 +19,7 @@ function HomePage() {
                 I'm a full-stack web developer.
                 </p>
                 <div className="icons">
-                    <a target="_blanck" href="https://www.linkedin.com/in/tarun-rawat-3832a7162/" className="icon ">
+                    <a target="_blanck" href="https://www.linkedin.com/in/tarunrawat1997/" className="icon ">
                         <LinkedInIcon />
                     </a>
                     <a target="_blanck" href="https://github.com/Tarun3165" className="icon ">
