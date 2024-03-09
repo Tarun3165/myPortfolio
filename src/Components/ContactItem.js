@@ -27,6 +27,12 @@ const ContactItemStyled = styled.div`
     &:not(:last-child){
         margin-bottom: 2.5rem;
     }
+    @media screen and (max-width: 500px){
+        padding:1.5rem 1.5rem;
+    }
+    @media screen and (max-width: 400px){
+        padding:1rem 1rem;
+    }
     .left-content{
         padding: 1.5rem;
         border: 1px solid var(--border-color);
@@ -38,6 +44,20 @@ const ContactItemStyled = styled.div`
         svg{
             font-size: 2.3rem;
         }
+        @media screen and (max-width: 500px){
+            padding: 1rem;
+            margin-right: 1.2rem;
+            svg{
+                font-size: 1.8rem;
+            }
+        }
+        @media screen and (max-width: 375px){
+            padding: 0.5rem;
+            margin-right: 1rem;
+            svg{
+                font-size: 1.3rem;
+            }
+        }
     }
 
     .right-content{
@@ -48,6 +68,7 @@ const ContactItemStyled = styled.div`
         }
         p{
             padding: .1rem 0;
+            font-size: 80%;
         }
     }
 `;

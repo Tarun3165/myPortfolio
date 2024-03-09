@@ -6,6 +6,8 @@ function Particle() {
   return (
     <>
       <Particles
+	  width='100vw'
+	  height='100vh'
     params={{
 	    "particles": {
 	        "number": {

@@ -7,9 +7,12 @@ export const MainLayout = styled.div`
         padding: 4rem;
     }
     @media screen and (max-width: 510px){
-        padding: 3rem;
+        padding: 2rem;
     }
-    @media screen and (max-width: 571px){
+    @media screen and (max-width: 400px){
+        padding: 2rem 1.4rem;
+    }
+    @media screen and (max-width: 300px){
         padding: 2rem 0.4rem;
     }
 `;

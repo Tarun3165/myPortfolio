@@ -158,6 +158,21 @@ h6{
       z-index: 15;
       svg{
           font-size: 3rem;
+          @media screen and (max-width:400px){
+      }
+        svg{
+            font-size: 2rem;
+        }
+      }
+      @media screen and (max-width:300px){
+        svg{
+            font-size: 1.5rem;
+        }
+      }
+      @media screen and (max-width:200px){
+        svg{
+            font-size: 1rem;
+        }
       }
     }
 

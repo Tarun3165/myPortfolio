@@ -79,12 +79,10 @@ const ContactPageStyled = styled.section`
                 margin-bottom: 3rem;
             }
         }
+
         .right-content{
             display: grid;
             grid-template-columns: repeat(1, 1fr);
-            @media screen and (max-width: 502px){
-                width: 70%;
-            }
         }
         .contact-title{
             h4{
